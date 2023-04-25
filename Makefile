@@ -6,7 +6,7 @@ login:
 init:
 		terraform init
 demostack:
-		doormat aws --account $(DOORMAT_AWS_ACCOUNT)  tf-push --local
+		doormat aws --account aws_jose.merchan_test --tf-push --tf-local
 apply:
 		terraform init
 		terraform plan

@@ -99,7 +99,7 @@ variable "vpc_cidr_block" {
 
 variable "cidr_blocks" {
   description = "The CIDR blocks to create the workstations in."
-  default     = ["10.1.1.0/24", "10.1.2.0/24",  "10.1.3.0/24"]
+  default     = ["10.1.1.0/24", "10.1.2.0/24", "10.1.3.0/24"]
 }
 
 variable "zone_id" {
@@ -177,5 +177,5 @@ variable "f5_username" {
 variable "f5_password" {
   description = "F5 password"
   default     = "admin"
-  sensitive = true
+  sensitive   = true
 }

@@ -48,7 +48,12 @@ output "Servers" {
     server.servers
   ]
 }
+
 /**
+output "bird" {
+  value = aws_instance.bird.*.public_dns
+}
+
 output "Primary_k8s_eks_endpoint"{
   value = module.primarycluster.eks_endpoint
 }
